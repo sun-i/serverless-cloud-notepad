@@ -16,9 +16,6 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          secrets: |
-            SCN_SALT
-            SCN_SECRET
         env:
           SCN_SALT: ${{ secrets.SCN_SALT }}
           SCN_SECRET: ${{ secrets.SCN_SECRET }}
